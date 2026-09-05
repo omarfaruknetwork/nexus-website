@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NEXUS Futuristic Time System</title>
+    <meta name="description"
+        content="NEXUS Futuristic Time System — a lightweight futuristic clock, calendar, notes and productivity dashboard.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #070a12;
+            color: #e8ecf7;
+            line-height: 1.7;
+        }
+
+        a {
+            color: #61dafb;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            width: min(1100px, 92%);
+            margin: auto;
+        }
+
+        header {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            background:
+                radial-gradient(circle at 50% 30%, #172554 0%, transparent 40%),
+                #070a12;
+        }
+
+        .hero {
+            width: 100%;
+        }
+
+        .logo {
+            width: 90px;
+            height: 90px;
+            margin: 0 auto 25px;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 38px;
+            font-weight: bold;
+            background: linear-gradient(135deg, #00d9ff, #635bff);
+            box-shadow: 0 0 45px rgba(0, 217, 255, .35);
+        }
+
+        h1 {
+            font-size: clamp(42px, 7vw, 78px);
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        .subtitle {
+            max-width: 700px;
+            margin: auto;
+            color: #aab4ca;
+            font-size: 19px;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 13px 25px;
+            border-radius: 12px;
+            background: #ffffff;
+            color: #070a12;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 90px 0;
+            border-top: 1px solid #151b2b;
+        }
+
+        h2 {
+            font-size: 35px;
+            margin-bottom: 25px;
+        }
+
+        h3 {
+            margin: 25px 0 8px;
+            color: #61dafb;
+        }
+
+        p {
+            color: #b5bed0;
+            margin-bottom: 15px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+            margin-top: 35px;
+        }
+
+        .card {
+            padding: 25px;
+            background: #0d1220;
+            border: 1px solid #1b2539;
+            border-radius: 18px;
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
+        footer {
+            padding: 35px 0;
+            text-align: center;
+            border-top: 1px solid #151b2b;
+            color: #778197;
+        }
+
+        .nav {
+            position: fixed;
+            top: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            background: rgba(10, 14, 25, .85);
+            backdrop-filter: blur(12px);
+            border: 1px solid #202a40;
+            padding: 10px 15px;
+            border-radius: 14px;
+            white-space: nowrap;
+        }
+
+        .nav a {
+            margin: 0 8px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            .nav {
+                width: 94%;
+                overflow-x: auto;
+            }
+
+            .nav a {
+                margin: 0 5px;
+                font-size: 12px;
+            }
+
+            section {
+                padding: 65px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#terms">Terms</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Home -->
+    <header id="home">
+        <div class="container hero">
+
+            <div class="logo">N</div>
+
+            <h1>NEXUS</h1>
+
+            <p class="subtitle">
+                NEXUS Futuristic Time System is a lightweight productivity
+                extension designed to bring time, calendar, notes and useful
+                information together in a clean futuristic interface.
+            </p>
+
+            <a href="#features" class="button">Explore NEXUS</a>
+
+        </div>
+    </header>
+
+
+    <!-- Features -->
+    <section id="features">
+        <div class="container">
+
+            <h2>Features</h2>
+
+            <p>
+                NEXUS is designed to provide a simple and focused experience
+                directly from your browser.
+            </p>
+
+            <div class="features">
+
+                <div class="card">
+                    <h3>⏱ Futuristic Clock</h3>
+                    <p>
+                        A clean and modern time interface designed for everyday use.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>📅 Calendar</h3>
+                    <p>
+                        Optional Google Calendar integration helps users view
+                        their calendar information.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>📝 Notes</h3>
+                    <p>
+                        Keep quick notes and useful information accessible from
+                        your browser.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>🚀 Lightweight</h3>
+                    <p>
+                        Designed to be fast, simple and easy to use without
+                        unnecessary complexity.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Privacy Policy -->
+    <section id="privacy">
+        <div class="container">
+
+            <h2>Privacy Policy</h2>
+
+            <p>
+                <strong>Last updated: September 5, 2026</strong>
+            </p>
+
+            <p>
+                NEXUS Futuristic Time System ("NEXUS", "we", "our", or "the
+                extension") is designed with user privacy in mind.
+            </p>
+
+            <h3>Information We Access</h3>
+
+            <p>
+                NEXUS may request access to Google Calendar information when
+                the user voluntarily chooses to connect their Google Calendar.
+            </p>
+
+            <p>
+                Calendar access is used only to provide calendar-related
+                functionality within the extension.
+            </p>
+
+            <h3>Google Account Information</h3>
+
+            <p>
+                When Google Calendar integration is enabled, authentication
+                is handled through Google's OAuth authorization system.
+                NEXUS does not ask users to provide their Google password.
+            </p>
+
+            <h3>Data Storage</h3>
+
+            <p>
+                NEXUS does not sell, rent, or trade users' personal information.
+                The extension only uses information necessary to provide its
+                features.
+            </p>
+
+            <h3>Third-Party Services</h3>
+
+            <p>
+                Google services may be used for calendar authentication and
+                calendar data access. Google's own privacy policies and terms
+                apply to those services.
+            </p>
+
+            <h3>Changes to This Policy</h3>
+
+            <p>
+                This Privacy Policy may be updated when necessary. Any changes
+                will be published on this page.
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- Terms -->
+    <section id="terms">
+        <div class="container">
+
+            <h2>Terms of Service</h2>
+
+            <p>
+                <strong>Last updated: September 5, 2026</strong>
+            </p>
+
+            <p>
+                By using NEXUS Futuristic Time System, you agree to these
+                Terms of Service.
+            </p>
+
+            <h3>Use of the Extension</h3>
+
+            <p>
+                NEXUS is provided as a productivity and time-management tool.
+                Users are responsible for how they use the extension.
+            </p>
+
+            <h3>Google Calendar Integration</h3>
+
+            <p>
+                Google Calendar integration is optional. Users may authorize
+                access to their calendar through Google's authentication system.
+            </p>
+
+            <h3>Availability</h3>
+
+            <p>
+                We may modify, update, suspend, or discontinue parts of the
+                extension at any time.
+            </p>
+
+            <h3>Limitation of Liability</h3>
+
+            <p>
+                NEXUS is provided on an "as is" basis. We are not responsible
+                for losses resulting from the use or inability to use the
+                extension.
+            </p>
+
+            <h3>Changes to These Terms</h3>
+
+            <p>
+                These Terms may be updated from time to time. Continued use
+                of NEXUS after changes means that you accept the updated terms.
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container">
+
+            <h2>Contact</h2>
+
+            <p>
+                If you have questions, feedback, or concerns about NEXUS,
+                please contact us by email.
+            </p>
+
+            <p>
+                Email:
+                <a href="mailto:omarfaruk.network@gmail.com">
+                    omarfaruk.network@gmail.com
+                </a>
+            </p>
+
+        </div>
+    </section>
+    <!-- Support / Payment -->
+    <section id="support">
+        <div class="container">
+
+            <h2>Support NEXUS</h2>
+
+            <p>
+                If you enjoy using NEXUS Futuristic Time System and would like
+                to support the project, you can send a voluntary contribution.
+            </p>
+
+            <div class="card" style="max-width:650px;margin:30px auto;text-align:center;">
+
+                <h3>💎 USDT</h3>
+
+                <p>
+                    <strong>Network:</strong> BNB Smart Chain (BEP20)
+                </p>
+
+                <p>
+                    <strong>Minimum deposit:</strong> More than 0.01 USDT
+                </p>
+
+                <div style="
+        background:#070a12;
+        border:1px solid #26324a;
+        padding:15px;
+        border-radius:12px;
+        margin:20px 0;
+        word-break:break-all;
+      ">
+                    <span id="walletAddress">
+                        0x9592c4e0502fdf1b869ba67aa156b8d3aad99c23
+                    </span>
+
+                </div>
+                Binance ID
+                <div style="
+        background:#070a12;
+        border:1px solid #26324a;
+        padding:15px;
+        border-radius:12px;
+        margin:20px 0;
+        word-break:break-all;
+      ">
+                    <span id="binanceID">
+                        883947502
+                    </span>
+
+
+                </div>
+
+                <button onclick="copyWallet()" style="
+          padding:12px 22px;
+          border:0;
+          border-radius:10px;
+          cursor:pointer;
+          font-weight:bold;
+        ">
+                    📋 Copy Address
+                </button>
+                <button onclick="copyBinanceID()" style="
+          padding:12px 22px;
+          border:0;
+          border-radius:10px;
+          cursor:pointer;
+          font-weight:bold;
+        ">
+                    📋 Copy Binance ID
+                </button>
+
+                <a href="https://www.binance.com/en/my/wallet/account/main/deposit/crypto/USDT" target="_blank"
+                    class="button" style="margin-left:8px;">
+                    Open Binance
+                </a>
+
+                <p style="margin-top:25px;font-size:14px;">
+                    Please make sure you select <strong>USDT</strong> and
+                    <strong>BSC (BEP20)</strong> before sending.
+                </p>
+
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        function copyWallet() {
+            const address = document.getElementById("walletAddress").innerText;
+
+            navigator.clipboard.writeText(address).then(() => {
+                alert("USDT address copied!");
+            });
+        }
+        function copyBinanceID() {
+            const binanceID = document.getElementById("binanceID").innerText;
+
+            navigator.clipboard.writeText(binanceID).then(() => {
+                alert("Binance ID copied!");
+            });
+        }
+    </script>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            © 2026 NEXUS Futuristic Time System. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+
+</html>
